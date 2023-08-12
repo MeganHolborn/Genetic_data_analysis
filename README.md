@@ -1,6 +1,6 @@
 # Genetic variant data analysis
 
-This repository contains scripts for the analysis of genetic/genomic variant data. This work was completed as part of my MSc in Medical Immunology at the University of Pretoria, South Africa.
+This repository contains scripts for the analysis of genetic variant data for chosen genes of interest. This work was completed as part of my MSc in Medical Immunology at the University of Pretoria, South Africa.
 
 ## Important terminology
 
@@ -28,7 +28,7 @@ The variant data used for this analysis was generated through a prior analysis o
 
 ## Analysis aim
 
-The aim of this analysis was to determine the African population frequencies and potential pathogenic effects of genetic variants that may be relevant to a medical condition known as neonatal [hypoxic ischemic encephalopathy](https://www.ucsfbenioffchildrens.org/conditions/neonatal-hypoxic-ischemic-encephalopathy).
+The aim of this analysis was to determine the African population frequencies and potential pathogenic effects of genetic variants within genes that are associated with a medical condition known as neonatal [hypoxic ischemic encephalopathy](https://www.ucsfbenioffchildrens.org/conditions/neonatal-hypoxic-ischemic-encephalopathy).
 
 Key research questions were:
 1. Which African population groups are represented in the datasets and what is the distribution of sample sizes within each group?
@@ -46,7 +46,7 @@ For this analysis, a sample is defined as a the ID of an individual from which g
 
 **Fix for understanding**
 
-2. What is the extent of shared and unique genetic variation within African population groups?
+2. What is the extent of shared and unique genetic variation within Western, Eastern, Southern and Central Africa?
 
 Variant frequency counts were determined for each African population group. The shared and unique genetic variation between the population groups was visualised using upset plots. An upset plot is a type of data visualization that is used to compare the overlap or intersection of multiple sets or categories.
 
