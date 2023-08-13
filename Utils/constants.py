@@ -39,9 +39,10 @@ REGIONAL_CLASSIFICATION = {
     "Luhya": "EA",
 }
 
-SMALL_FONT = 8
+SMALL_FONT = 10
 MEDIUM_FONT = 12
-BIGGER_FONT = 16
+BIGGER_FONT = 14
+LARGEST_FONT = 16
 
 VARIANT_CLASSIFICATION = {
     "3_prime_UTR_variant": "untranslated region",
