@@ -31,11 +31,10 @@ REGIONAL_CLASSIFICATION = {
     "Mbuti Pygmy": "CA",
     "Biaka Pygmy": "CA",
     "Mandenka": "WA",
-    "HGDP Yoruba": "WA",
+    "Yoruba": "WA",
     "San": "SA",
     "Bantu South Africa": "SA",
     "Bantu Kenya": "EA",
-    "1000G Yoruba": "WA",
     "Luhya": "EA",
 }
 

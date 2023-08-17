@@ -84,18 +84,29 @@ def calculate_frequency(query_allele_count: int, total_count: int):
     return frequency
 
 
-def grouped_pop_allele_counts(count_df: pd.DataFrame, group_name: str, filters=None):
+def grouped_pop_allele_counts(
+    count_df: pd.DataFrame, group_name: str, reg_filters=None, subpop_filters=None
+):
     """
     Calculate summed allele counts for groups of populations
     """
 
-    if filters is not None:
+    if reg_filters is not None:
         grouped_count = (
-            count_df[filters]
+            count_df[reg_filters]
             .groupby(["ID", "REF", "ALT", "POS", "VAR_NAME", "GENE"])
             .sum(numeric_only=True)
             .reset_index()
             .assign(REG=group_name)
+        )
+
+    elif subpop_filters is not None:
+        grouped_count = (
+            count_df[subpop_filters]
+            .groupby(["ID", "REF", "ALT", "POS", "VAR_NAME", "GENE"])
+            .sum(numeric_only=True)
+            .reset_index()
+            .assign(SUB_POP=group_name)
         )
 
     else:
