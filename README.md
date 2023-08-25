@@ -1,78 +1,69 @@
 # Genetic variant data analysis
 
-This repository contains scripts for the analysis of genetic variant data for chosen genes of interest. This work was completed as part of my MSc in Medical Immunology at the University of Pretoria, South Africa.
+This repository contains scripts for the analysis of genetic variant data. This work was completed in partial fulfillment of an MSc in Medical Immunology at the University of Pretoria by Megan A Holborn.
+
+## Content guide:
+
+1. [Background information](#background-information)
+2. [Data acquisition](#data-acquisition)
+3. [Data preparation and cleaning](#data-preparation-and-cleaning)
+4. [Research questions](#research-questions)
+4. [Methods](#methods)
+5. [Findings](#findings)
+6. [Acknowledgements](#acknowledgements)
+7. [Important terminology](#important-terminology)
+
+## Background information
+
+Hypoxic ischemic encephalopathy (HIE) is a type of brain injury resulting from a restriction in blood flow and oxygen delivery around the time of birth. [Prior studies](https://doi.org/10.1016/j.ygeno.2022.110508) have revealed associations between suspected HIE and genes involved in several biological functions, including programmed cell death, inflammation and blood flow homeostasis. These studies have been performed on predominantly Asian and European populations with no studies published on African populations to date. African populations exhibit a high amount of genetic diversity, which often renders disease research findings from other global populations less applicable to Africans. This analysis aimed to assess the genetic variation within HIE-associated genes across African population groups to provide foundational data for a genetic association analysis involving African HIE patients and controls.
+
+## Data acquisition
+
+* African genomic data from the 1000 Genomes and Human Genome Diversity Project datasets was
+retrieved from [GnomAD v3.1.2](https://gnomad.broadinstitute.org/news/2021-10-gnomad-v3-1-2-minor-release/) in Variant Call Format (.vcf). A [bioinformatics pipeline](https://github.com/Tuks-ICMM/Pharmacogenetic-Analysis-Pipeline) was utilised to process the African genomic data, resulting in population-stratified variant count information for genetic variants located in the genes of interest.
+* Additional data on the impact of variants on gene functionality, processing and translation into proteins (consequences), along with predictions of the potential harm caused by variants (effect predictions) were retrieved from [Ensembl](https://www.ensembl.org/info/docs/tools/vep/index.html) and [PredictSNP2](https://loschmidt.chemi.muni.cz/predictsnp2/), respectively.
+
+## Data preparation and cleaning
+
+The acquired data underwent [preparation and cleaning steps](https://github.com/MeganHolborn/Genetic_data_analysis/tree/main/Notebooks/Data_preparation). This process entailed:
+
+* Selecting relevant features of interest
+* Removing duplicate entries and handling null values
+* Merging of data from several sources if applicable 
+* Adding additional features
+* Restructuring the data in a suitable format for further analysis
+
+## Research questions
+
+1. Which African ethnolinguistic population groups are represented by the genetic data and what are the proportions of samples from Central, Southern, Eastern and Western African regions?
+2. To what extent is genetic variation shared or unique within Central, Southern, Eastern and Western African populations?
+3. What is the prevalence of rare variants within African populations, and do specific populations exhibit a higher rare variant burden?
+4. Which of the variants with rare frequencies in African populations are most likely to contribute to disease, based on predicted effect on gene/protein structure and function?
+5. How do frequencies of variants in the studied genes among Africans compare with those of Europeans/Asians?
+6. Have any of the genetic variants within the genes of interest previously been associated with HIE? If so, are any of these variants present at significantly different frequencies in Africans compared to the population groups used in the HIE studies?
+
+## Methods
+
+The methods utilised to answer each research question are documented in the respective Jupyter notebook in the [Analysis and Visualisation](https://github.com/MeganHolborn/Genetic_data_analysis/tree/main/Notebooks/Analysis_and_Visualisation) folder. 
+
+## Findings
+
+The findings of the analyses are documented [here](https://github.com/MeganHolborn/Genetic_data_analysis/blob/main/Results/Report/Report.pdf). 
+
+## Acknowledgements
+
+Funding for my MSc project was received from the Bill and Melinda Gates Foundation and the South African Medical Research Council. 
+
+The project was supervised by Prof Michael S Pepper, Prof Fourie Joubert and Dr Juanita Mellet from the University of Pretoria.
 
 ## Important terminology
+
+Allele: An allele refers to one of the possible forms or variations of a specific gene. Genes are made up of DNA, and different alleles can exist within a population, representing different versions of the same gene.
 
 DNA: DNA, short for deoxyribonucleic acid, is a molecule that contains the genetic instructions or blueprint for the development, functioning, and reproduction of all known living organisms.
 
 Gene: A gene is a segment of DNA that contains instructions for producing a specific protein or performing a particular function within an organism.
 
-Allele: An allele refers to one of the possible forms or variations of a specific gene. Genes are made up of DNA, and different alleles can exist within a population, representing different versions of the same gene.
+Genetic variant: A genetic variant is a specific form or alteration of a gene or a DNA sequence. It refers to any difference or change in the DNA sequence when compared to a reference or normal sequence. 
 
-Variant: A variant is a specific form or alteration of a gene or a DNA sequence. It refers to any difference or change in the DNA sequence when compared to a reference or normal sequence. 
-
-Variant frequency: Variant frequency refers to the proportion or percentage of individuals in a population who carry a particular variant or genetic alteration.
-
-Variant effect: Variant effect refers to the impact or consequence of a genetic variant on an organism.
-
-Variant type: Variant type refers to the categorization or classification of genetic variants based on their characteristics.
-
-rsID: An rsID number is a unique label ("rs" followed by a number) used by researchers and databases to identify a specific short-length variant.
-
-## Data
-
-The variant data used for this analysis was generated through a prior analysis of [1000 Genomes](https://www.internationalgenome.org/1000-genomes-summary/), [Human Genome Diversity Project](https://www.internationalgenome.org/data-portal/data-collection/hgdp) genomic data using a [Snakemake bioinformatics pipeline](https://github.com/Tuks-ICMM/Pharmacogenetic-Analysis-Pipeline).
-
-**Include GnomAD**
-
-## Analysis aim
-
-The aim of this analysis was to determine the African population frequencies and potential pathogenic effects of genetic variants within genes that are associated with a medical condition known as neonatal [hypoxic ischemic encephalopathy](https://www.ucsfbenioffchildrens.org/conditions/neonatal-hypoxic-ischemic-encephalopathy).
-
-Key research questions were:
-1. Which African population groups are represented in the datasets and what is the distribution of sample sizes within each group?
-2. What is the extent of shared and unique genetic variation within African population groups?
-3. What is the distribution of variant type, novelty and frequency in the gene regions of interest? 
-4. What are the differences in variant frequencies among population groups within Africa, and how do these frequencies compare to global populations?
-
-## Methods 
-
-A brief description of the methods used to answer the research questions are described below. Detailed descriptions of the methods are given in the relevant jupyter notebooks in the [Analysis](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Analysis) folder. 
-
-1. Which African population groups are represented in the datasets and what is the distribution of sample sizes within each group? 
-
-For this analysis, a sample is defined as a the ID of an individual from which genomic data was obtained. Sample data was grouped by ethnolinguistic classification and region. A bar plot was constructed to visualise the sample counts per population group. The regional distribution of samples was visualised using a pie chart. 
-
-**Fix for understanding**
-
-2. What is the extent of shared and unique genetic variation within Western, Eastern, Southern and Central Africa?
-
-Variant frequency counts were determined for each African population group. The shared and unique genetic variation between the population groups was visualised using upset plots. An upset plot is a type of data visualization that is used to compare the overlap or intersection of multiple sets or categories.
-
-3. What is the distribution of variant type, novelty and frequency in the gene regions of interest? 
-
-Variant annotation information including type, rsID nomenclature and consequences were imported from Ensembl via API. Variant frequencies were calculated from the available allele count information. A variant was classified as potentially novel if rsID nomenclature for the variant did not exist. Variant type, novelty and frequency distributions were visualised using stacked bar plots. 
-
-4. What are the differences in variant frequencies among population groups within Africa, and how do these frequencies compare to global populations?
-
-Variant frequencies for African population groups were compared using Fisher's two-sided tests. Frequency differences between population groups were demarcated as significant if the p-value was below 0.05, after correction for multiple testing using the Bonferroni method. 
-
-To compare variant frequencies of Africans to that of European, East Asian and South Asian populations, European, East Asian and South Asian variant frequency data was imported from the NCBI Allele Frequency Aggregator (ALFA) database via API. Variant frequency comparisons were performed using Fisher's two-sided tests as described above. 
-
-## Results
-
-The results of the analysis are provided in the [Results](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Results) folder.
-
-## File structure
-
-Scripts to process, analyse and visualise the data are included in the [Analysis](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Analysis) folder. 
-
-The [Data](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Data) folder contains raw and processed data organised. The [Raw](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Data/Raw) data consists of genetic variant allele counts and frequencies for African super- and sub-population groups. Predicted variant effect data gathered from [Ensembl](https://www.ensembl.org/info/docs/tools/vep/index.html) and [PredictSNP2](https://loschmidt.chemi.muni.cz/predictsnp2/) are also included here. The [Processed](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Data/Processed) data consists of data that has been processed using scripts in the [Analysis/Data_preparation](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Analysis/Data_preparation) folder. 
-
-Metadata on the samples and gene regions from which the data was generated can be found in the [Metadata](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Metadata) folder.
-
-The results of the analysis are included in the [Results](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Results) folder.
-
-[Utils](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Utils) contains all constants and functions generated for the analysis.
-[Utils](https://github.com/MeganHolborn/Genomics_data_analysis_internal/tree/main/Utils) contains all constants and functions generated for the analysis.
+Genetic variant frequency: The frequency of a genetic variant refers to the proportion or percentage of individuals in a population who carry a particular variant or genetic alteration.
