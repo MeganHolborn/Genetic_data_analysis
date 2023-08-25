@@ -44,7 +44,7 @@ The acquired data underwent [preparation and cleaning steps](https://github.com/
 
 ## Methods
 
-The methods utilised to answer each research question are documented in the respective Jupyter notebook in the [Analysis and Visualisation](https://github.com/MeganHolborn/Genetic_data_analysis/tree/main/Notebooks/Analysis_and_Visualisation) folder. 
+The methods utilised to answer each research question are documented in the respective Jupyter notebook in the [Analysis and Visualisation folder](https://github.com/MeganHolborn/Genetic_data_analysis/tree/main/Notebooks/Analysis_and_Visualisation). 
 
 ## Findings
 
