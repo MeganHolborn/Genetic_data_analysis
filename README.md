@@ -2,7 +2,7 @@
 
 This repository contains scripts for the analysis of genetic variant data. This work was completed in partial fulfillment of an MSc in Medical Immunology at the University of Pretoria by Megan A Holborn.
 
-## Content guide:
+## Content
 
 1. [Background information](#background-information)
 2. [Data acquisition](#data-acquisition)
