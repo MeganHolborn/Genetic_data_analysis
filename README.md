@@ -1,4 +1,4 @@
-# Genetic variant data analysis
+# HIE Genetic Variant Data Analysis
 
 This repository contains scripts for the analysis of genetic variant data on genes associated with hypoxic ischemic encephalopathy (HIE). This work was completed in partial fulfillment of an MSc in Medical Immunology at the University of Pretoria by Megan A Holborn.
 
