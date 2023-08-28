@@ -1,4 +1,4 @@
-# HIE Genetic Variant Data Analysis
+# HIE Genetic Data Analysis
 
 This repository contains scripts for the analysis of genetic variant data on genes associated with hypoxic ischemic encephalopathy (HIE). This work was completed in partial fulfillment of an MSc in Medical Immunology at the University of Pretoria by Megan A Holborn.
 
@@ -25,7 +25,7 @@ retrieved from [GnomAD v3.1.2](https://gnomad.broadinstitute.org/news/2021-10-gn
 
 ## Data preparation and cleaning
 
-The acquired data underwent [preparation and cleaning steps](https://github.com/MeganHolborn/Genetic_data_analysis/tree/main/Notebooks/Data_preparation). This process entailed:
+The acquired data underwent [preparation and cleaning steps](https://github.com/Tuks-ICMM/HIE_Genetic_data_analysis/tree/main/Notebooks/Data_preparation). This process entailed:
 
 * Selecting relevant features of interest
 * Removing duplicate entries and handling null values
@@ -44,11 +44,11 @@ The acquired data underwent [preparation and cleaning steps](https://github.com/
 
 ## Methods
 
-The methods utilised to answer each research question are documented in the respective Jupyter notebook in the [Analysis and Visualisation folder](https://github.com/MeganHolborn/Genetic_data_analysis/tree/main/Notebooks/Analysis_and_Visualisation). 
+The methods utilised to answer each research question are documented in the respective Jupyter notebook in the [Analysis and Visualisation folder](https://github.com/Tuks-ICMM/HIE_Genetic_data_analysis/tree/main/Notebooks/Analysis_and_Visualisation). 
 
 ## Findings
 
-The findings of the analyses are documented [here](https://github.com/MeganHolborn/Genetic_data_analysis/blob/main/Results/Report/Report.pdf). 
+The findings of the analyses are documented [here](https://github.com/Tuks-ICMM/HIE_Genetic_data_analysis/blob/main/Results/Report/Report.pdf). 
 
 ## Acknowledgements
 
