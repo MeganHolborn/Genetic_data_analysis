@@ -36,8 +36,8 @@ The acquired data underwent [preparation and cleaning steps](https://github.com/
 ## Research questions
 
 1. Which African ethnolinguistic population groups are represented by the genetic data and what are the proportions of samples from Central, Southern, Eastern and Western African regions?
-2. To what extent is genetic variation shared or unique within Central, Southern, Eastern and Western African populations?
-3. What is the prevalence of rare variants within African populations, and do specific populations exhibit a higher rare variant burden?
+2. To what extent is genetic variation shared or unique within Central, Southern, Eastern and Western African populations within the genes of interest?
+3. What is the prevalence of rare variants in the genes of interest within African populations, and do specific populations exhibit a higher rare variant burden?
 4. Which of the variants with rare frequencies in African populations are most likely to contribute to disease, based on predicted effect on gene/protein structure and function?
 5. How do frequencies of variants in the studied genes among Africans compare with those of Europeans/Asians?
 6. Have any of the genetic variants within the genes of interest previously been associated with HIE? If so, are any of these variants present at significantly different frequencies in Africans compared to the population groups used in the HIE studies?
