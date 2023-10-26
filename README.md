@@ -2,6 +2,8 @@
 
 This repository contains scripts for the analysis of genetic variant data on genes associated with hypoxic ischemic encephalopathy (HIE). This work was completed in partial fulfillment of an MSc in Medical Immunology at the University of Pretoria by Megan A Holborn.
 
+View a pdf summarising the methods and results [here](https://github.com/Tuks-ICMM/HIE_Genetic_data_analysis/blob/main/Results/Report/Report.pdf). 
+
 ## Content
 
 1. [Background information](#background-information)
