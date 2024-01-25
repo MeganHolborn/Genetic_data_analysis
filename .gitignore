@@ -2,5 +2,5 @@
 /.idea/*
 /Notebooks/VEP/*
 CALCULATIONS.py
-/Data/remove_SAHGP.ipynb
+/Data/Misc/*
 /Results/Report/*.pptx
