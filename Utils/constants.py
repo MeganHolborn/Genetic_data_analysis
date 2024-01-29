@@ -15,11 +15,11 @@ SUBPOP_RENAME = {
     "MbutiPygmy": "Mbuti Pygmy",
     "BiakaPygmy": "Biaka Pygmy",
     "Mandenka": "Mandenka",
-    "Yoruba": "HGDP Yoruba",
+    "Yoruba": "Yoruba",
     "San": "San",
     "BantuSouthAfrica": "Bantu South Africa",
     "BantuKenya": "Bantu Kenya",
-    "YRI": "1000G Yoruba",
+    "YRI": "Yoruba",
     "LWK": "Luhya",
 }
 REGIONAL_CLASSIFICATION = {
