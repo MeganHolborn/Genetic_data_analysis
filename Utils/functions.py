@@ -1,4 +1,5 @@
 """This module defines functions."""
+
 # Import modules and packages
 
 import os
@@ -63,12 +64,10 @@ def add_prefix_dataframe_col_names(dataframe, columns_list, prefix):
     """
     Rename columns in dataframe according to a given prefix
     """
-    rename_dict = dict()
+    rename_dict = {}
     for line in columns_list:
-        key = line
-        if key not in rename_dict:
-            rename_dict[key] = str()
-        rename_dict[key] = prefix + f"{line}"
+        rename_dict[line] = prefix + line
+
     dataframe = dataframe.rename(columns=rename_dict)
     return dataframe
 
