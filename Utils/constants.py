@@ -1,7 +1,5 @@
 """This module defines constants."""
 
-import os
-
 import pandas as pd
 
 POPULATION_CLUSTERS = ["SUPER", "SUB"]
