@@ -1,9 +1,9 @@
 """This module defines constants."""
 
-import pandas as pd
-
+# Population classifications
 POPULATION_CLUSTERS = ["SUPER", "SUB"]
 
+# Renaming ethnolinguistic groups (subpopulations)
 SUBPOP_RENAME = {
     "ACB": "African Caribbean",
     "ASW": "African American",
@@ -20,6 +20,8 @@ SUBPOP_RENAME = {
     "YRI": "Yoruba",
     "LWK": "Luhya",
 }
+
+# Classifying ethnolinguistic groups by African region
 REGIONAL_CLASSIFICATION = {
     "African Caribbean": "ACB",
     "African American": "ASW",
@@ -36,11 +38,7 @@ REGIONAL_CLASSIFICATION = {
     "Luhya": "EA",
 }
 
-SMALL_FONT = 10
-MEDIUM_FONT = 12
-BIGGER_FONT = 14
-LARGEST_FONT = 16
-
+# Renaming variant consequence classifications
 VARIANT_CLASSIFICATION = {
     "3_prime_UTR_variant": "untranslated region",
     "5_prime_UTR_variant": "untranslated region",
@@ -63,3 +61,28 @@ VARIANT_CLASSIFICATION = {
     "upstream_gene_variant": "upstream/downstream",
     "unclassified": "unclassified",
 }
+
+# Defining a list of variants (with rsIDs) associated with HIE in the genes of interest.
+# This information was retrieved from: https://doi.org/10.1016/j.ygeno.2022.110508.
+HIE_VARIANT_RSIDS = [
+    "rs2067853",
+    "rs1217401",
+    "rs2043211",
+    "rs1001179",
+    "rs1800896",
+    "rs1071676",
+    "rs1143623",
+    "rs16944",
+    "rs1800795",
+    "rs1801133",
+    "rs1808593",
+    "rs2070744",
+    "rs6517135",
+    "rs1799964",
+]
+
+# Defining font sizes for plotting
+SMALL_FONT = 10
+MEDIUM_FONT = 12
+BIGGER_FONT = 14
+LARGEST_FONT = 16
