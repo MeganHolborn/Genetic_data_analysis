@@ -135,12 +135,9 @@ def fishers_test(allele_count_df: pd.DataFrame, comparitors_list: list):
             oddsratio, pvalue = fisher_exact([[alt_1, alt_2], [ref_1, ref_2]])
             if "#CHROM" in fisher_variant_combination_results.columns:
                 fisher_variant_combination_results["#CHROM"] = [row["#CHROM"]]
-            fisher_variant_combination_results["ID"] = [row["ID"]]
             fisher_variant_combination_results["VAR_NAME"] = [row["VAR_NAME"]]
             fisher_variant_combination_results["REF"] = [row["REF"]]
             fisher_variant_combination_results["ALT"] = [row["ALT"]]
-            fisher_variant_combination_results["GENE"] = [row["GENE"]]
-            fisher_variant_combination_results["POS"] = [row["POS"]]
             fisher_variant_combination_results[
                 "PVALUE_{}_{}".format(first_pop, second_pop)
             ] = [pvalue]
@@ -183,9 +180,7 @@ def multipletest_correction_wholedf(
     Performs multiple testing correction of p-values for entire dataframe
     """
     multipletests_results = pd.DataFrame()
-    data_melt = pd.melt(
-        data, id_vars=["ID", "VAR_NAME", "REF", "ALT"], value_vars=columns
-    )
+    data_melt = pd.melt(data, id_vars=["VAR_NAME", "REF", "ALT"], value_vars=columns)
     multipletests_input = data_melt[["value"]].values.flatten().tolist()
     corrected_pvalues = multipletests(
         multipletests_input, alpha=alpha_threshold, method=stats_method
@@ -199,7 +194,7 @@ def multipletest_correction_wholedf(
         axis=1,
     )
     multipletests_results_pivot = multipletests_results.pivot(
-        index=["ID", "VAR_NAME", "REF", "ALT"], columns="variable", values="FDR"
+        index=["VAR_NAME", "REF", "ALT"], columns="variable", values="FDR"
     ).reset_index()
     return multipletests_results_pivot
 
