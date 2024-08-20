@@ -7,14 +7,21 @@ View a PDF summarising the findings [here](https://github.com/Tuks-ICMM/HIE_Gene
 # Table of Contents
 
 1. [Background](#background)
-    1.1. [Important terminology](#important-terminology)
-    1.2. [Research questions](#research-questions)
-    1.3. [Data retrieval](#data-retrieval)
-    1.4. [Data preparation](#data-preparation)
-    1.5. [Analysis](#analysis)
-    1.6. [Findings](#findings)
-2. [Installation and usage](#installation-and-usage)
-3. [Acknowledgements](#acknowledgements)
+   
+   1.1. [Important terminology](#important-terminology)
+   
+   1.2. [Research questions](#research-questions)
+   
+   1.3. [Data retrieval](#data-retrieval)
+   
+   1.4. [Data preparation](#data-preparation)
+   
+   1.5. [Analysis](#analysis)
+   
+   1.6. [Findings](#findings)
+   
+3. [Installation and usage](#installation-and-usage)
+4. [Acknowledgements](#acknowledgements)
 
 # 1. Background
 
