@@ -39,12 +39,17 @@ Hypoxic ischemic encephalopathy (HIE) is a type of brain injury resulting from a
 
 The focus of this analysis was on understanding the frequency and predicted effects of genetic variants found in HIE genes of interest in the general African population. Specifically, the research addressed the following questions:
 
-1. **Population Representation:** Which African ethnolinguistic population groups are represented by the genetic data, and what are the proportions of samples from Central, Southern, Eastern, and Western Africa?
-2. **Genetic Variation:** To what extent is genetic variation shared or unique within African subpopulation groups?
-3. **Rare Variants:** What is the distribution of rare variants within the different genes, and how do these distributions vary within African ethnolinguistic subpopulations? Additionally, do specific subpopulations exhibit a higher amount of rare variants compared to others?
-4. **Deleterious Variants:** Which variants identified in African populations have deleterious effect prediction scores and are likely to contribute to disease? 
-5. **Variant Frequency Comparisons:** How do the frequencies of variants in the genes of interest compare between African ethnolinguistic subpopulation groups, and between Africans and European, Asian, and Latin American populations?
-6. **Disease-Associated Variants:** How many of the variants identified within the genes of interest in African populations have known disease phenotype associations? Of the variants with known disease associations, how many are deleterious, and which disease phenotypes are associated with these deleterious variants, whether common or rare in Africans? Furthermore, how do the frequencies of these deleterious variants with known disease associations compare across African subpopulation groups and between Africa and other global populations?
+1. Which African ethnolinguistic population groups are represented by the genetic data, and what are the proportions of samples from Central, Southern, Eastern, and Western Africa?
+
+2. To what extent is genetic variation shared or unique within African subpopulation groups?
+
+3. What is the distribution of rare variants within the different genes, and how do these distributions vary within African ethnolinguistic subpopulations? 
+
+4. Which variants identified in African populations have deleterious effect prediction scores and are likely to contribute to disease?
+
+5. How do the frequencies of variants in the genes of interest compare across African subpopulation groups and between Africa and other global populations?
+
+6. How do the frequencies of deleterious variants with known disease associations compare across African subpopulation groups and between Africa and other global populations?
 
 ## 1.3. Data retrieval
 
@@ -81,6 +86,7 @@ An overview of the findings of the analysis are available [here](https://github.
 The data analysis scripts in this repository was developed using Python 3.9.13.
 
 To utilise the scripts, install the necessary Python dependencies by typing in the following terminal command:
+
 `pip install -r requirements.txt`
 
 # 3. Acknowledgements
